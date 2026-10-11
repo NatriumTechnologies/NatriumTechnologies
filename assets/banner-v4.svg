@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bg-void" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="100%" stop-color="#030305" />
+    </linearGradient>
+
+    <radialGradient id="zenith-corona" cx="50%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.11" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.035" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="eclipse-rim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="18%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.42" />
+      <stop offset="82%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="eclipse-bloom" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.03" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="75%" stop-color="#ffffff" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="orbital-ring" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.06" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.16" />
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="lat-line-1" x1="10%" y1="0%" x2="90%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="lat-line-2" x1="15%" y1="0%" x2="85%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="ray-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="65%" stop-color="#ffffff" stop-opacity="0.015" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="planet-crust" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#09090d" stop-opacity="0.96" />
+      <stop offset="45%" stop-color="#020204" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="1" />
+    </linearGradient>
+
+    <clipPath id="banner-clip">
+      <rect width="1200" height="360" rx="10" />
+    </clipPath>
+
+    <clipPath id="planet-clip">
+      <path d="M -120 360 Q 600 68 1320 360 L 1320 440 L -120 440 Z" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#banner-clip)">
+    <!-- Pure AMOLED Void -->
+    <rect width="1200" height="360" fill="url(#bg-void)" />
+
+    <!-- Zenith Corona -->
+    <ellipse cx="600" cy="180" rx="560" ry="185" fill="url(#zenith-corona)" />
+
+    <!-- Zenith Sun Rays -->
+    <g opacity="0.9">
+      <polygon points="600,-60 180,360 265,360" fill="url(#ray-grad)" />
+      <polygon points="600,-60 355,360 445,360" fill="url(#ray-grad)" />
+      <polygon points="600,-60 535,360 665,360" fill="url(#ray-grad)" />
+      <polygon points="600,-60 755,360 845,360" fill="url(#ray-grad)" />
+      <polygon points="600,-60 935,360 1020,360" fill="url(#ray-grad)" />
+    </g>
+
+    <!-- Outer Dashed Orbital Ring -->
+    <path
+      d="M -120 336 Q 600 44 1320 336"
+      stroke="url(#orbital-ring)"
+      stroke-width="1"
+      stroke-dasharray="3 9"
+    />
+
+    <!-- Under-the-Curve Planetary Surface & Geodesic Node Network -->
+    <g clip-path="url(#planet-clip)">
+      <path d="M -120 360 Q 600 68 1320 360 L 1320 440 L -120 440 Z" fill="url(#planet-crust)" />
+
+      <!-- Foreshortened Spherical Latitude Contours -->
+      <path d="M -100 376 Q 600 94 1300 376" stroke="url(#lat-line-1)" stroke-width="0.9" />
+      <path d="M -80 398 Q 600 126 1280 398" stroke="url(#lat-line-2)" stroke-width="0.75" />
+      <path d="M -60 428 Q 600 166 1260 428" stroke="url(#lat-line-1)" stroke-width="0.75" />
+      <path d="M -40 468 Q 600 216 1240 468" stroke="url(#lat-line-2)" stroke-width="0.65" />
+
+      <!-- Curved Spherical Meridian Ribs -->
+      <g stroke="#ffffff" stroke-opacity="0.035" stroke-width="0.7">
+        <path d="M 600 214 L 600 360" />
+        <path d="M 490 222 Q 470 285 445 360" />
+        <path d="M 710 222 Q 730 285 755 360" />
+        <path d="M 380 242 Q 345 300 305 360" />
+        <path d="M 820 242 Q 855 300 895 360" />
+        <path d="M 270 274 Q 225 315 175 360" />
+        <path d="M 930 274 Q 975 315 1025 360" />
+      </g>
+
+      <!-- Geodesic Node Links Under the Curve -->
+      <g stroke="#ffffff" stroke-opacity="0.075" stroke-width="0.8">
+        <line x1="345" y1="284" x2="430" y2="258" />
+        <line x1="430" y1="258" x2="475" y2="300" />
+        <line x1="430" y1="258" x2="535" y2="240" />
+        <line x1="535" y1="240" x2="600" y2="274" />
+        <line x1="535" y1="240" x2="665" y2="240" />
+        <line x1="665" y1="240" x2="600" y2="274" />
+        <line x1="665" y1="240" x2="770" y2="258" />
+        <line x1="770" y1="258" x2="725" y2="300" />
+        <line x1="770" y1="258" x2="855" y2="284" />
+        <line x1="475" y1="300" x2="600" y2="274" />
+        <line x1="600" y1="274" x2="725" y2="300" />
+        <line x1="260" y1="318" x2="345" y2="284" />
+        <line x1="855" y1="284" x2="940" y2="318" />
+      </g>
+
+      <!-- Planetary Surface Relay Nodes -->
+      <g fill="#ffffff">
+        <circle cx="260" cy="318" r="1.5" fill-opacity="0.28" />
+        <circle cx="345" cy="284" r="1.8" fill-opacity="0.42" />
+        <circle cx="430" cy="258" r="2.1" fill-opacity="0.58" />
+        <circle cx="475" cy="300" r="1.6" fill-opacity="0.35" />
+        <circle cx="535" cy="240" r="2.2" fill-opacity="0.65" />
+        <circle cx="600" cy="274" r="2.0" fill-opacity="0.52" />
+        <circle cx="665" cy="240" r="2.2" fill-opacity="0.65" />
+        <circle cx="725" cy="300" r="1.6" fill-opacity="0.35" />
+        <circle cx="770" cy="258" r="2.1" fill-opacity="0.58" />
+        <circle cx="855" cy="284" r="1.8" fill-opacity="0.42" />
+        <circle cx="940" cy="318" r="1.5" fill-opacity="0.28" />
+      </g>
+
+      <!-- Target Halo Rings on Key Hub Nodes -->
+      <g stroke="#ffffff" stroke-opacity="0.2" stroke-width="0.8" fill="none">
+        <circle cx="430" cy="258" r="6" />
+        <circle cx="535" cy="240" r="6.5" />
+        <circle cx="665" cy="240" r="6.5" />
+        <circle cx="770" cy="258" r="6" />
+      </g>
+    </g>
+
+    <!-- Primary Eclipse Horizon Rim & Bloom -->
+    <path d="M -120 360 Q 600 68 1320 360" stroke="url(#eclipse-bloom)" stroke-width="6" />
+    <path d="M -120 360 Q 600 68 1320 360" stroke="url(#eclipse-rim)" stroke-width="1.5" />
+
+    <!-- 1. Full Natrium Wordmark Logo (No background, refined scale 0.175 centered at x=600, y=76) -->
+    <g transform="translate(600, 76) scale(0.175) translate(-514.75, -166.6)">
+      <path
+        fill="#ffffff"
+        fill-rule="evenodd"
+        d="M 41.0 38.6 L 41.0 263.6 L 87.7 215.0 L 88.0 151.9 L 119.0 180.9 L 243.5 40.0 L 225.8 40.0 L 141.0 134.3 Z M 227.0 85.9 L 184.5 133.0 L 184.0 181.6 L 161.8 160.0 L 160.1 160.0 L 40.7 294.0 L 59.0 294.2 L 143.0 206.6 L 227.0 289.5 Z M 292.0 87.0 L 232.0 241.0 L 276.3 241.0 L 296.0 193.9 L 349.0 241.2 L 401.0 241.3 L 396.4 226.0 L 342.2 87.0 Z M 376.0 86.6 L 375.9 130.0 L 419.3 131.0 L 419.7 241.0 L 462.6 241.0 L 463.2 131.0 L 503.1 130.0 L 503.3 87.0 Z M 513.0 86.7 L 513.0 130.1 L 589.0 130.6 L 597.0 134.5 L 603.3 142.0 L 605.4 148.0 L 605.2 158.0 L 602.4 165.0 L 597.2 171.0 L 588.0 175.3 L 564.0 175.8 L 563.5 177.0 L 563.7 195.0 L 597.0 239.3 L 647.5 240.0 L 620.0 201.0 L 627.4 195.0 L 635.6 185.0 L 641.6 173.0 L 645.5 159.0 L 646.2 146.0 L 644.2 132.0 L 639.2 119.0 L 631.8 108.0 L 618.0 95.7 L 598.0 87.6 Z M 859.0 86.4 L 858.2 239.0 L 896.7 239.0 L 897.0 181.3 L 924.0 207.5 L 950.6 182.0 L 951.0 262.9 L 989.0 237.6 L 989.0 86.1 L 924.0 151.2 Z M 656.0 87.5 L 655.7 239.0 L 657.0 240.1 L 700.0 240.1 L 700.5 88.0 Z M 716.0 87.2 L 715.5 188.0 L 719.5 205.0 L 727.7 219.0 L 735.7 227.0 L 745.0 233.3 L 754.0 237.3 L 768.0 240.5 L 787.0 240.9 L 800.0 239.2 L 813.0 234.5 L 822.0 229.2 L 832.0 220.3 L 837.3 213.0 L 842.4 203.0 L 845.4 192.0 L 846.0 87.4 L 802.4 88.0 L 802.2 183.0 L 801.2 187.0 L 796.0 194.2 L 789.0 198.2 L 780.0 199.3 L 772.0 198.3 L 765.0 194.2 L 761.0 189.0 L 758.7 182.0 L 758.6 88.0 Z M 513.0 141.7 L 512.0 239.0 L 515.0 240.2 L 554.0 240.1 L 554.4 142.0 Z M 315.7 144.0 L 335.2 191.0 L 297.0 191.4 Z"
+      />
+    </g>
+
+    <!-- 2. Small Company Name & 3. Small Subtitle -->
+    <g text-anchor="middle">
+      <text
+        x="600"
+        y="122"
+        fill="#e4e4e7"
+        font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="12.5"
+        font-weight="600"
+        letter-spacing="0.06em"
+      >
+        Natrium Technologies Inc.
+      </text>
+
+      <text
+        x="600"
+        y="141"
+        fill="#8e8e96"
+        font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Monaco, Consolas, monospace"
+        font-size="10"
+        font-weight="500"
+        letter-spacing="0.16em"
+      >
+        ZERO-SURVEILLANCE CRYPTOGRAPHIC INFRASTRUCTURE
+      </text>
+    </g>
+
+    <!-- Outer Frame Border -->
+    <rect x="0.5" y="0.5" width="1199" height="359" rx="9.5" stroke="#1e1e24" stroke-width="1" />
+  </g>
+</svg>

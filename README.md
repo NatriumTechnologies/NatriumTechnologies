@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://natrium.sh">
-    <img src="./assets/banner-v3.svg" alt="Natrium Technologies Inc. — Zero-Surveillance Cryptographic Infrastructure" width="100%" />
+    <img src="./assets/banner-v4.svg" alt="Natrium Technologies Inc. — Zero-Surveillance Cryptographic Infrastructure" width="100%" />
   </a>
   <br />
   <br />
