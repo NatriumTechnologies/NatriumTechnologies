@@ -158,8 +158,8 @@
     <path d="M -120 360 Q 600 68 1320 360" stroke="url(#eclipse-bloom)" stroke-width="6" />
     <path d="M -120 360 Q 600 68 1320 360" stroke="url(#eclipse-rim)" stroke-width="1.5" />
 
-    <!-- 1. Full Natrium Wordmark Logo (No background, refined scale 0.175 centered at x=600, y=76) -->
-    <g transform="translate(600, 76) scale(0.175) translate(-514.75, -166.6)">
+    <!-- 1. Full Natrium Wordmark Logo (No background, scale 0.235 centered at x=600, y=72) -->
+    <g transform="translate(600, 72) scale(0.235) translate(-518.5, -166.4)">
       <path
         fill="#ffffff"
         fill-rule="evenodd"
@@ -169,29 +169,8 @@
 
     <!-- 2. Small Company Name & 3. Small Subtitle -->
     <g text-anchor="middle">
-      <text
-        x="600"
-        y="122"
-        fill="#e4e4e7"
-        font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
-        font-size="12.5"
-        font-weight="600"
-        letter-spacing="0.06em"
-      >
-        Natrium Technologies Inc.
-      </text>
-
-      <text
-        x="600"
-        y="141"
-        fill="#8e8e96"
-        font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Monaco, Consolas, monospace"
-        font-size="10"
-        font-weight="500"
-        letter-spacing="0.16em"
-      >
-        ZERO-SURVEILLANCE CRYPTOGRAPHIC INFRASTRUCTURE
-      </text>
+      <text x="601.5" y="128" fill="#e4e4e7" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="0.05em">Natrium Technologies Inc.</text>
+      <text x="600.8" y="147" fill="#8e8e96" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Monaco, Consolas, monospace" font-size="9.5" font-weight="500" letter-spacing="0.16em">ZERO-SURVEILLANCE CRYPTOGRAPHIC INFRASTRUCTURE</text>
     </g>
 
     <!-- Outer Frame Border -->

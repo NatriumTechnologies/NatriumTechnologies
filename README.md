@@ -1,13 +1,21 @@
 <div align="center">
   <a href="https://natrium.sh">
-    <img src="./assets/banner-v5.svg" alt="Natrium Technologies Inc. — Zero-Surveillance Cryptographic Infrastructure" width="100%" />
+    <img src="./assets/banner-v6.svg" alt="Natrium Technologies Inc." width="100%" />
   </a>
   <br />
   <br />
   <p>
-    <a href="https://natrium.sh"><img src="https://img.shields.io/badge/PLATFORM-NATRIUM.SH-000000?style=for-the-badge&labelColor=09090b&color=ffffff" alt="natrium.sh" /></a>
-    <a href="https://natrium.sh/security"><img src="https://img.shields.io/badge/ENCRYPTION-AES--256--GCM%20%2F%20ZERO--KNOWLEDGE-000000?style=for-the-badge&labelColor=09090b&color=a1a1aa" alt="Encryption" /></a>
-    <a href="https://natrium.sh/.well-known/agent.json"><img src="https://img.shields.io/badge/PROTOCOLS-MCP%20%C2%B7%20A2A%20%C2%B7%20WEBMCP-000000?style=for-the-badge&labelColor=09090b&color=a1a1aa" alt="Protocols" /></a>
+    <a href="https://natrium.sh"><img src="https://img.shields.io/badge/WEBSITE-NATRIUM.SH-000000?style=for-the-badge&labelColor=09090b&color=ffffff" alt="natrium.sh" /></a>
+    <a href="https://natrium.sh/security"><img src="https://img.shields.io/badge/SECURITY-ENCRYPTED_EMAIL-000000?style=for-the-badge&labelColor=09090b&color=a1a1aa" alt="Security" /></a>
+    <a href="https://natrium.sh/about"><img src="https://img.shields.io/badge/ABOUT-NATRIUM_TECHNOLOGIES-000000?style=for-the-badge&labelColor=09090b&color=a1a1aa" alt="About" /></a>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/Node.js-09090b?style=flat-square&logo=nodedotjs&logoColor=ffffff" alt="Node.js" />
+    <img src="https://img.shields.io/badge/Next.js-09090b?style=flat-square&logo=nextdotjs&logoColor=ffffff" alt="Next.js" />
+    <img src="https://img.shields.io/badge/React-09090b?style=flat-square&logo=react&logoColor=ffffff" alt="React" />
+    <img src="https://img.shields.io/badge/SQLite-09090b?style=flat-square&logo=sqlite&logoColor=ffffff" alt="SQLite" />
+    <img src="https://img.shields.io/badge/Linux-09090b?style=flat-square&logo=linux&logoColor=ffffff" alt="Linux" />
+    <img src="https://img.shields.io/badge/Cloudflare-09090b?style=flat-square&logo=cloudflare&logoColor=ffffff" alt="Cloudflare" />
   </p>
 </div>
 
@@ -15,38 +23,41 @@
 
 ### Overview
 
-**Natrium Technologies Inc.** engineers zero-surveillance communications, encrypted mail transfer infrastructure, real-time low-latency media systems, and autonomous AI agent protocols.
+**Natrium Technologies Inc.** builds fast, private communication software designed from the ground up to protect user privacy. Our flagship product, [**natrium.sh**](https://natrium.sh), is a complete encrypted email platform engineered entirely by our team.
 
-- **Flagship Platform**: [**natrium.sh**](https://natrium.sh) — Zero-surveillance encrypted email platform with direct-MX delivery, hardware-backed WebAuthn/Passkey authentication, automated multi-engine threat detonation, and native AI agent interoperability.
-- **Security Posture**: Zero advertising telemetry, zero third-party data brokers, strict per-tenant cryptographic isolation (`AES-256-GCM` + `HMAC-SHA256`), and full DKIM/SPF/DMARC/TLS 1.3 transport enforcement.
+- **Custom Email Server**: Built our own mail delivery engine from scratch, sending, receiving, and verifying emails directly without relying on external email providers.
+- **Private by Design**: Every message and file attachment is encrypted before it is stored. Users can sign in with Passkeys or 2FA, with zero ads and zero data tracking.
+- **Automated Protection & Local AI**: Scans attachments for viruses before download, blocks spam and phishing in real time, and includes a private, locally hosted AI assistant for drafting and replies.
 
 ---
 
 ### Systems & Platforms
 
-| System | Domain / Repository | Architecture & Capabilities |
+| Page | Link | Description |
 | :--- | :--- | :--- |
-| **Natrium Mail & MTA** | [`https://natrium.sh`](https://natrium.sh) | Encrypted webmail workspace, direct-MX outbound/inbound MTA, Passkey/FIDO2 + RFC 6238 TOTP identity, VirusTotal & sandbox attachment detonation, and real-time SIEM telemetry. |
-| **Natrium RTC** | [`NatriumTechnologies/natrium-rtc`](https://github.com/NatriumTechnologies/natrium-rtc) | Real-time encrypted WebRTC audio, high-frame-rate video, low-latency screen sharing, and peer collaboration platform. |
-| **Web RealTime Chat** | [`NatriumTechnologies/web-realtime-chat-server`](https://github.com/NatriumTechnologies/web-realtime-chat-server) | High-concurrency real-time messaging server and bidirectional WebSocket event transport. |
-| **Transaction Analyzer** | [`NatriumTechnologies/paypal-transaction-analyzer`](https://github.com/NatriumTechnologies/paypal-transaction-analyzer) | Automated financial ledger parser, anomaly detection, and transaction telemetry suite. |
+| **Natrium Webmail** | [`https://natrium.sh`](https://natrium.sh) | The main encrypted webmail application with account switching, custom folders, and an integrated AI assistant. |
+| **Security** | [`https://natrium.sh/security`](https://natrium.sh/security) | How we protect accounts, encrypt messages and attachments, and keep user data safe. |
+| **Compare** | [`https://natrium.sh/compare`](https://natrium.sh/compare) | Direct comparison of Natrium with traditional and private email services. |
+| **Safety** | [`https://natrium.sh/safety`](https://natrium.sh/safety) | How our virus scanning, sender blocking, and phishing protection keep inboxes clean. |
+| **About** | [`https://natrium.sh/about`](https://natrium.sh/about) | Our mission, company background, and approach to building private software. |
+| **Transparency** | [`https://natrium.sh/subpoenas`](https://natrium.sh/subpoenas) | Clear policies on user privacy, data requests, and legal compliance. |
 
 ---
 
-### Technical Stack & Standards
+### Built With
 
 ```text
-CRYPTOGRAPHY & IDENTITY   AES-256-GCM · HMAC-SHA256 · Ed25519 / X25519 · WebAuthn / FIDO2 Passkeys · RFC 6238 TOTP
-MAIL & TRANSPORT          Direct-MX Delivery · RSA-2048 DKIM · SPF / DMARC · TLS 1.3 · RFC 5322 / MIME
-AGENT PROTOCOLS           Model Context Protocol (MCP) · Google A2A · WebMCP · OpenAPI 3.1 · OAuth 2.0 Discovery
-RUNTIME & INFRASTRUCTURE  Node.js 22 · Next.js · React 19 · Native SQLite · WebRTC · Cloudflare Anycast Edge
+FRONTEND & APP      React · Next.js · JavaScript · HTML & CSS
+BACKEND & DATA      Node.js · SQLite · REST APIs · Custom Mail Server
+SECURITY & AI       AES 256 Encryption · Passkeys & 2FA · Malware Scanning · Local AI
+INFRASTRUCTURE      Linux · Cloudflare · Automated Testing · Zero Downtime Deployment
 ```
 
 ---
 
-### Security & Contact
+### Contact
 
-- **Web Platform**: [https://natrium.sh](https://natrium.sh)
-- **Security Architecture & Disclosure**: [https://natrium.sh/security](https://natrium.sh/security) (`security@natrium.sh`)
-- **Transparency & Subpoena Policy**: [https://natrium.sh/subpoenas](https://natrium.sh/subpoenas)
-- **Administrative Contact**: [`admin@natrium.sh`](mailto:admin@natrium.sh)
+- **Website**: [https://natrium.sh](https://natrium.sh)
+- **Contact Page**: [https://natrium.sh/contact](https://natrium.sh/contact)
+- **Security**: [https://natrium.sh/security](https://natrium.sh/security) (`security@natrium.sh`)
+- **General Inquiries**: [`admin@natrium.sh`](mailto:admin@natrium.sh)
