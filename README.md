@@ -94,8 +94,6 @@ Open the `.dmg` and drag **Natrium Email** into your `Applications` folder.
 Natrium is engineered by an independent solo developer without venture capital, tracking pixels, or corporate data brokering. Because we will **never** sell user data or run advertisements, community sponsorship directly funds our monthly server bills, clean IP reputation fees, Anycast edge routing, and ongoing cryptographic research.
 
 - ❤️ **GitHub Sponsors**: [**github.com/sponsors/NatriumTechnologies**](https://github.com/sponsors/NatriumTechnologies)
-- 🌐 **Sponsors & Backers Portal**: [**natrium.sh/sponsors**](https://natrium.sh/sponsors)
-- 📄 **Raw Sponsorship Specification**: [**natrium.sh/sponsors.md**](https://natrium.sh/sponsors.md)
 
 ---
 
@@ -112,9 +110,9 @@ INFRASTRUCTURE      Linux · Cloudflare Anycast · Automated Audits · Zero-Down
 
 ### Contact & Links
 
-- **Webmail**: [https://natrium.sh](https://natrium.sh)
+- **Email**: [https://natrium.sh](https://natrium.sh)
 - **Downloads Portal**: [https://natrium.sh/downloads](https://natrium.sh/downloads)
-- **Sponsor Page**: [https://natrium.sh/sponsors](https://natrium.sh/sponsors)
+- **GitHub Sponsors**: [https://github.com/sponsors/NatriumTechnologies](https://github.com/sponsors/NatriumTechnologies)
 - **Security & Transparency**: [https://natrium.sh/security](https://natrium.sh/security)
 - **General Inquiries**: [`admin@natrium.sh`](mailto:admin@natrium.sh)
 - **Legal & Compliance**: [`compliance@natrium.sh`](mailto:compliance@natrium.sh)
