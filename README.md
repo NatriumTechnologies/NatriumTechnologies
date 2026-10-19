@@ -14,7 +14,6 @@
     <img src="https://img.shields.io/badge/Node.js-09090b?style=flat-square&logo=nodedotjs&logoColor=ffffff" alt="Node.js" />
     <img src="https://img.shields.io/badge/Next.js-09090b?style=flat-square&logo=nextdotjs&logoColor=ffffff" alt="Next.js" />
     <img src="https://img.shields.io/badge/React-09090b?style=flat-square&logo=react&logoColor=ffffff" alt="React" />
-    <img src="https://img.shields.io/badge/Python-09090b?style=flat-square&logo=python&logoColor=ffffff" alt="Python" />
     <img src="https://img.shields.io/badge/SQLite-09090b?style=flat-square&logo=sqlite&logoColor=ffffff" alt="SQLite" />
     <img src="https://img.shields.io/badge/Linux-09090b?style=flat-square&logo=linux&logoColor=ffffff" alt="Linux" />
     <img src="https://img.shields.io/badge/Cloudflare-09090b?style=flat-square&logo=cloudflare&logoColor=ffffff" alt="Cloudflare" />
@@ -30,47 +29,6 @@
 - **Custom Outbound & Inbound MTA**: Built our own mail delivery engine from scratch, sending, receiving, and cryptographically verifying emails directly without relying on external email providers.
 - **Zero-Knowledge Architecture**: Every message and file attachment is encrypted with AES-256-GCM before storage. Users sign in with hardware Passkeys (WebAuthn) or TOTP 2FA, with zero ads and zero data tracking.
 - **Autonomous Local AI**: Scans attachments for threats before download, mitigates phishing in real time, and includes a private, locally hosted AI assistant for drafting and contextual summaries.
-
----
-
-### Flagship Systems & Infrastructure Tooling
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/NatriumTechnologies/netprobe">⚡ NetProbe</a></h4>
-      <p><em>High-speed asynchronous network scanner, service discovery engine, and live packet analyzer in pure Python 3 standard library.</em></p>
-      <p>
-        <a href="https://github.com/NatriumTechnologies/netprobe/actions/workflows/ci.yml"><img src="https://github.com/NatriumTechnologies/netprobe/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
-        <a href="https://github.com/NatriumTechnologies/netprobe/releases/latest"><img src="https://img.shields.io/badge/release-v0.1.0-blue.svg?style=flat-square" alt="Release" /></a>
-        <img src="https://img.shields.io/badge/speed-2%2C100%20ports%2Fs-brightgreen.svg?style=flat-square" alt="Speed" />
-        <img src="https://img.shields.io/badge/deps-zero-success.svg?style=flat-square" alt="Zero Dependencies" />
-      </p>
-      <ul>
-        <li><strong>Non-Blocking Port Engine:</strong> Event-driven <code>asyncio</code> socket scanner probing 1,000+ ports/sec.</li>
-        <li><strong>Service Fingerprinting:</strong> Banner grabbing for HTTP, SSH, FTP, SMTP, Redis, MySQL, and TLS.</li>
-        <li><strong>Subnet Discovery:</strong> Scans CIDR ranges (<code>/24</code>) and resolves local hosts concurrently.</li>
-        <li><strong>Raw Packet Sniffer:</strong> Layer-3/4 packet dissection (IPv4, TCP flags, UDP, ICMP) on the wire.</li>
-      </ul>
-      <p><code>python -m netprobe scan 127.0.0.1 -p 1-1000 -c 512</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/NatriumTechnologies/natrium-rtc">📡 Natrium RTC</a></h4>
-      <p><em>Low-latency, peer-to-peer WebRTC voice, video, and screen transmission framework.</em></p>
-      <p>
-        <img src="https://img.shields.io/badge/protocol-WebRTC%20%2F%20SRTP-orange.svg?style=flat-square" alt="Protocol" />
-        <img src="https://img.shields.io/badge/encryption-DTLS--SRTP-purple.svg?style=flat-square" alt="Encryption" />
-        <img src="https://img.shields.io/badge/latency-%3C35ms-brightgreen.svg?style=flat-square" alt="Latency" />
-      </p>
-      <ul>
-        <li><strong>End-to-End Encrypted Media:</strong> Zero-intermediary audio and video transmission pipelines.</li>
-        <li><strong>Adaptive Bitrate:</strong> Dynamic bandwidth probing and real-time packet loss compensation.</li>
-        <li><strong>STUN / TURN Relays:</strong> Robust NAT traversal across carrier-grade firewalls.</li>
-      </ul>
-      <p><code>natrium-rtc --mesh --listen 0.0.0.0:8443</code></p>
-    </td>
-  </tr>
-</table>
 
 ---
 
