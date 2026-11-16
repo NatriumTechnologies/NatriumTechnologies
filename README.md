@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://natrium.sh">
-    <img src="./assets/banner-v7.svg" alt="Natrium Technologies Inc." width="100%" />
+    <img src="./assets/banner-v8.svg" alt="Natrium Technologies Inc." width="100%" />
   </a>
 </div>
 
