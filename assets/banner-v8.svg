@@ -215,7 +215,7 @@ l-89 84 2 -489z" />
 
     <!-- Institutional Brand & Subtitle Typography -->
     <g text-anchor="middle">
-      <text x="600" y="158" fill="#f4f4f5" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" letter-spacing="0.28em">NATRIUM TECHNOLOGIES INC.</text>
+      <text x="600" y="158" fill="#f4f4f5" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" letter-spacing="0.28em">NATRIUM TECHNOLOGIES</text>
       <text x="600" y="175" fill="#a1a1aa" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="8.5" font-weight="500" letter-spacing="0.20em">SOVEREIGN CRYPTOGRAPHIC INFRASTRUCTURE</text>
     </g>
 

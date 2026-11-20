@@ -1,12 +1,12 @@
 <div align="center">
   <a href="https://natrium.sh">
-    <img src="./assets/banner-v8.svg" alt="Natrium Technologies Inc." width="100%" />
+    <img src="./assets/banner-v8.svg" alt="Natrium Technologies" width="100%" />
   </a>
 </div>
 
 ### Institutional Mandate
 
-**Natrium Technologies Inc.** is an independent systems and cryptographic engineering firm specializing in sovereign, zero-knowledge communication infrastructure. Our production platform, [**natrium.sh**](https://natrium.sh), delivers end-to-end encrypted email architecture engineered to eliminate single points of surveillance, centralized credential custody, and metadata harvesting.
+**Natrium Technologies** is an independent systems and cryptographic engineering firm specializing in sovereign, zero-knowledge communication infrastructure. Our production platform, [**natrium.sh**](https://natrium.sh), delivers end-to-end encrypted email architecture engineered to eliminate single points of surveillance, centralized credential custody, and metadata harvesting.
 
 Unlike legacy webmail services that scan message bodies or proprietary encrypted services reliant on local desktop bridges, Natrium couples client-side cryptographic envelope isolation with an autonomous **Direct-MX Mail Transfer Agent (MTA)**, **pre-vault behavioral malware screening**, **hardware FIDO2 passkeys**, and native **OpenAPI 3.1 & Model Context Protocol (MCP)** interfaces.
 
